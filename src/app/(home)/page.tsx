@@ -15,7 +15,7 @@ const HomePage = async () => {
   const cars = await getCars()
   return (
     <div>
-      Home Page
+      Home Page Game Page
       <CarList cars={cars} />
     </div>
   )
