@@ -5,7 +5,7 @@ const CarItem = ({ car }: { car: CarWithDeps }) => {
   return (
     <Link
       href={`car/${car.id}`}
-      className="flex cursor-pointer rounded-lg border-2 mt-2 p-2"
+      className="flex cursor-pointer rounded-lg border-2 mt-2 p-2 border-slate-400 hover:bg-slate-400"
     >
       <div className=" w-full">
         <p className="text-2xl font-semibold">{car.model.name}</p>

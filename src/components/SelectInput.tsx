@@ -19,7 +19,7 @@ const SelectInput = (props: SelectInputProps) => {
       <select
         name={name}
         {...rest}
-        className="w-64 h-8 bg-slate-500 text-white justify-self-end pl-2 rounded-md"
+        className="w-64 h-8 cursor-pointer bg-slate-500 text-white justify-self-end pl-2 rounded-md"
       >
         {items.map((item) => (
           <option key={item.value} value={item.value}>
