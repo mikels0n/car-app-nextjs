@@ -11,7 +11,7 @@ const TextInput = (props: TextInputProps) => {
       <input
         name={name}
         {...rest}
-        className="w-64 h-8 bg-slate-500 text-white justify-self-end pl-2 rounded-md"
+        className="w-64 h-8 bg-slate-500 text-white justify-self-end pl-2 rounded-md shadow-md hover:bg-slate-600"
       />
     </div>
   )

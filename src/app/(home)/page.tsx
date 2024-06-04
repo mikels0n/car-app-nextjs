@@ -54,8 +54,8 @@ const Home = () => {
   }
 
   return (
-    <div className="flex flex-col items-center bg-slate-200">
-      <div className="w-8/12 p-4 mt-4 border-2 rounded-lg border-slate-400 bg-white">
+    <div className="flex flex-col items-center">
+      <div className="w-8/12 p-4 mt-4 border-2 rounded-lg border-slate-400 bg-white shadow-xl">
         <h1 className="text-4xl text-center">VSE Car Dealership</h1>
         <CarSearchForm
           models={models.data}
@@ -63,7 +63,7 @@ const Home = () => {
           onSearch={handleSearch}
         />
         <div>Search results:</div>
-        {isCarsFetching && <div className="">Loading cars...</div>}
+        {isCarsFetching && <div>Loading cars...</div>}
         {!isCarsFetching && <CarList cars={cars.data} />}
       </div>
     </div>

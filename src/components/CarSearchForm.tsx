@@ -49,7 +49,7 @@ const CarSearchForm = ({ models, brands, onSearch }: CarSearchFormProps) => {
       />
       <button
         type="submit"
-        className="w-64 h-10 bg-slate-500 text-white mt-12 mb-8 rounded-md"
+        className="w-64 h-10 bg-slate-500 text-white mt-12 mb-8 rounded-md shadow-md hover:bg-slate-600"
       >
         Search
       </button>

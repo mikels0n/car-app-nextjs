@@ -19,7 +19,7 @@ const CarDetailPage = async ({ params }: { params: { id: string } }) => {
 
   return (
     <div className="w-screen flex flex-col items-center">
-      <div className="border-2 p-6 rounded-lg mt-5">
+      <div className="border-2 p-6 rounded-lg mt-5 bg-white border-slate-400 shadow-xl">
         <div className="text-2xl font-bold mb-3">
           {car?.brand.name} {car?.model.name}
         </div>

@@ -17,7 +17,7 @@ export default function SearchLayout({
 }>) {
   return (
     <html>
-      <body>
+      <body className=" bg-slate-200">
         <QueryClientProvider client={queryClient}>
           {children}
         </QueryClientProvider>
