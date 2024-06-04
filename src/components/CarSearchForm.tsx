@@ -12,7 +12,7 @@ interface CarSearchFormProps {
 const CarSearchForm = ({ models, brands, onSearch }: CarSearchFormProps) => {
   return (
     <form
-      className=""
+      className="flex flex-col p-4 mt-4 w-96 border-2 rounded-lg "
       onSubmit={(event) => {
         event.preventDefault()
         const data = new FormData(event.target as HTMLFormElement)
@@ -24,9 +24,9 @@ const CarSearchForm = ({ models, brands, onSearch }: CarSearchFormProps) => {
         })
       }}
     >
-      <TextInput label="Location" name="location" />
+      <TextInput label="Location:" name="location" />
       <SelectInput
-        label="Brand"
+        label="Brand:"
         name="brand"
         items={[
           { value: '', label: '' },
@@ -37,7 +37,7 @@ const CarSearchForm = ({ models, brands, onSearch }: CarSearchFormProps) => {
         ]}
       />
       <SelectInput
-        label="Model"
+        label="Model:"
         name="model"
         items={[
           { label: '', value: '' },

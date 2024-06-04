@@ -16,7 +16,11 @@ const SelectInput = (props: SelectInputProps) => {
   return (
     <div className="">
       {label ?? <label htmlFor={name}>{label}</label>}
-      <select name={name} {...rest} className="form-field">
+      <select
+        name={name}
+        {...rest}
+        className="w-64 h-8 bg-slate-500 text-white m-2"
+      >
         {items.map((item) => (
           <option key={item.value} value={item.value}>
             {item.label}
