@@ -56,7 +56,7 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center">
       <div className="p-4 mt-4 border-2 rounded-lg">
-        <h1 className="text-4xl">VSE Car Dealership</h1>
+        <h1 className="text-4xl text-center">VSE Car Dealership</h1>
         <CarSearchForm
           models={models.data}
           brands={brands.data}

@@ -12,7 +12,7 @@ interface CarSearchFormProps {
 const CarSearchForm = ({ models, brands, onSearch }: CarSearchFormProps) => {
   return (
     <form
-      className="flex flex-col p-4 mt-4 w-96 border-2 rounded-lg "
+      className="flex flex-col p-4 mt-4 w-96 border-2 rounded-lg items-center"
       onSubmit={(event) => {
         event.preventDefault()
         const data = new FormData(event.target as HTMLFormElement)
@@ -47,7 +47,10 @@ const CarSearchForm = ({ models, brands, onSearch }: CarSearchFormProps) => {
           })),
         ]}
       />
-      <button type="submit" className="">
+      <button
+        type="submit"
+        className="w-64 h-10 bg-slate-500 text-white mt-12 mb-8 rounded-md"
+      >
         Search
       </button>
     </form>
