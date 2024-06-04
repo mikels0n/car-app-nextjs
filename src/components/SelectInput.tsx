@@ -1,20 +1,20 @@
 interface Option {
-  value: string;
-  label: string;
+  value: string
+  label: string
 }
 
 interface SelectInputProps
   extends React.InputHTMLAttributes<HTMLSelectElement> {
-  name: string;
-  label?: string;
-  items: Option[];
+  name: string
+  label?: string
+  items: Option[]
 }
 
 const SelectInput = (props: SelectInputProps) => {
-  const { label, name, items, ...rest } = props;
+  const { label, name, items, ...rest } = props
 
   return (
-    <div className="flex flex-col">
+    <div className="">
       {label ?? <label htmlFor={name}>{label}</label>}
       <select name={name} {...rest} className="form-field">
         {items.map((item) => (
@@ -24,7 +24,7 @@ const SelectInput = (props: SelectInputProps) => {
         ))}
       </select>
     </div>
-  );
-};
+  )
+}
 
-export default SelectInput;
+export default SelectInput

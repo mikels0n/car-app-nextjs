@@ -1,16 +1,16 @@
 interface TextInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  name: string;
-  label?: string;
+  name: string
+  label?: string
 }
 
 const TextInput = (props: TextInputProps) => {
-  const { label, name, ...rest } = props;
+  const { label, name, ...rest } = props
   return (
-    <div className="flex flex-col">
+    <div className="">
       {label ?? <label htmlFor={name}>{label}</label>}
-      <input name={name} {...rest} className="form-field" />
+      <input name={name} {...rest} className="" />
     </div>
-  );
-};
+  )
+}
 
-export default TextInput;
+export default TextInput

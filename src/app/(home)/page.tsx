@@ -55,14 +55,13 @@ const Home = () => {
 
   return (
     <>
+      <h1 className="">AHOOOOOOOOOOOOOOJ</h1>
       <CarSearchForm
         models={models.data}
         brands={brands.data}
         onSearch={handleSearch}
       />
-      {isCarsFetching && (
-        <div className="flex justify-center pt-4">Loading cars...</div>
-      )}
+      {isCarsFetching && <div className="">Loading cars...</div>}
       {!isCarsFetching && <CarList cars={cars.data} />}
     </>
   )
